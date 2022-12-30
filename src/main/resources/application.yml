@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    name: flight
+    url: jdbc:mysql://localhost:3306/flight?&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: wdlcliumang0527a
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+thymeleaf:
+    prefix=classpath:/templates/
+    spring.thymeleaf.cache=false
+
+mybatis:
+  logging:
+    level:
+      com:
+        duan:
+          mapper=debug:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.springbootdemo.bean

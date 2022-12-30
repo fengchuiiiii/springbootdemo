@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>游客登录</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form role="form" action="/visitorlogin"method="post">
+    user:<input type="text" class="form-control" id="name" name="name" placeholder="Username" aria-describedby="basic-addon1"><br>
+    password:<input type="password" class="form-control" id="password"name="password" placeholder="Password" aria-describedby="basic-addon1">
+    <input type="submit"id="vloginView"value="submit" class="btn btn-default">
+</form>
+</body>
+</html>
